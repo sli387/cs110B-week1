@@ -17,10 +17,11 @@ int main()
         cout << "8. Cube Root" <<endl;
         cout << "9. Power" <<endl;
 	cin >> choice;
-if(choice > 0 && choice < 10 )
-{
-	switch (choice)
+	
+	if(choice > 0 && choice < 10 )
 	{
+	     switch (choice)
+	     {
                 case 1:
                         //do addition
                         cout << "Enter First Number " << endl;
@@ -44,7 +45,7 @@ if(choice > 0 && choice < 10 )
                         result = num1 - num2;
                         cout << "The Result is " << result<<endl;
                	 
-                break;
+               		 break;
 
                 case 3:
                         //do multiplication
@@ -67,26 +68,26 @@ if(choice > 0 && choice < 10 )
                         cout << "Enter Second Number " << endl;
                         cin >> num2;
 
-                if (num2 == 0)
-                {
-                    cout << "You cannot divide a number by Zero" << endl;
-                }
-                else
-                {
-                    result = num1 / num2;
-                    cout << "The Result is " << result<<endl;
-			    }
-                break;
+           	     	if (num2 == 0)
+                	{
+				cout << "You cannot divide a number by Zero" << endl;
+                	}
+                	else
+                	{
+                    		result = num1 / num2;
+                    		cout << "The Result is " << result<<endl;
+			}
+                	break;
 
                 case 5:
-                //do square
-                cout << "Enter Number " << endl;
-                cin >> num1;
+                	//do square
+                	cout << "Enter Number " << endl;
+                	cin >> num1;
 
-                result = num1 * num1;
-                cout << "The Result is " << result<<endl;
+                	result = num1 * num1;
+                	cout << "The Result is " << result<<endl;
             
-                break;
+                	break;
 
                 case 6:
                         //do cube
@@ -127,7 +128,7 @@ if(choice > 0 && choice < 10 )
                         cout << "The Result is " << result << endl;
                         break;
 
-    }
+    	      }
         }
 	    else
         {
